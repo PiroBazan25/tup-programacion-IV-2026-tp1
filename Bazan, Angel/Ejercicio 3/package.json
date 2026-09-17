@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio-3",
+  "version": "1.0.0",
+  "description": "Desarrollar una API con ExpressJS para administrar tareas y su estado de avance. Cada tarea deberá contar con un nombre y un estado que indique si fue completada, y esta información se conservará en un arreglo interno.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

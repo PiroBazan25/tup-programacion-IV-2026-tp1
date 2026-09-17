@@ -1,0 +1,52 @@
+### 1. Obtener TODAS las tareas
+GET http://localhost:3000/tareas
+
+###
+
+### 2. Obtener solo tareas COMPLETADAS
+GET http://localhost:3000/tareas?completada=true
+
+###
+
+### 3. Obtener solo tareas PENDIENTES
+GET http://localhost:3000/tareas?completada=false
+
+###
+
+### 4. Obtener una tarea por ID
+GET http://localhost:3000/tareas/4
+
+###
+
+### 5. Crear una nueva tarea (Estado por defecto: pendiente)
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Estudiar para el examen de Programacion IV"
+}
+
+###
+
+### 6. Error al crear: Nombre duplicado
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Instalar ExpressJS"
+}
+
+###
+
+### 7. Marcar tarea como completada (PUT)
+PUT http://localhost:3000/tareas/4
+Content-Type: application/json
+
+{
+  "completada": true
+}
+
+###
+
+### 8. Eliminar una tarea por ID
+DELETE http://localhost:3000/tareas/5
