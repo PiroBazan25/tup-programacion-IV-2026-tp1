@@ -1,0 +1,29 @@
+### 1. POST - Rectángulo válido
+POST http://localhost:3000/rectangulos/calcular
+Content-Type: application/json
+
+{
+  "base": 10,
+  "altura": 5
+}
+
+### 2. POST - Cuadrado válido
+POST http://localhost:3000/rectangulos/calcular
+Content-Type: application/json
+
+{
+  "base": 4,
+  "altura": 4
+}
+
+### 3. POST - Error por número negativo
+POST http://localhost:3000/rectangulos/calcular
+Content-Type: application/json
+
+{
+  "base": -5,
+  "altura": 10
+}
+
+### 4. GET - Consulta Query Params
+GET http://localhost:3000/rectangulos/calcular?base=6&altura=3
