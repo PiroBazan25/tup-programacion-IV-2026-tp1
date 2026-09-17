@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio-2",
+  "version": "1.0.0",
+  "description": "Desarrollar una API con ExpressJS para administrar la información académica de los alumnos de una materia y sus calificaciones. Cada alumno deberá contar con un nombre y tres notas, que se conservarán en un arreglo interno. No podrán existir alumnos con el mismo nombre al crear o modificar los registros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

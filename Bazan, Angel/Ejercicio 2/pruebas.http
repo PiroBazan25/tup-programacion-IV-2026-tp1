@@ -1,0 +1,60 @@
+### 1. Obtener todos los alumnos
+GET http://localhost:3000/alumnos
+
+###
+
+### 2. Obtener un alumno por ID (Ejemplo con Promocionado ID: 1)
+GET http://localhost:3000/alumnos/1
+
+###
+
+### 3. Obtener un alumno por ID (Ejemplo con Reprobado ID: 2)
+GET http://localhost:3000/alumnos/2
+
+###
+
+### 4. Crear un nuevo alumno (Caso Exitoso - Promocionado)
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Ana Martinez",
+  "notas": [9, 8, 10]
+}
+
+###
+
+### 5. Error al crear: Nombre duplicado
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Juan Perez",
+  "notas": [7, 7, 7]
+}
+
+###
+
+### 6. Error al crear: Arreglo sin 3 notas o notas fuera de rango (1-10)
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "Roberto Fernandez",
+  "notas": [8, 12]
+}
+
+###
+
+### 7. Modificar un alumno existente (Actualizar notas)
+PUT http://localhost:3000/alumnos/2
+Content-Type: application/json
+
+{
+  "notas": [7, 8, 7]
+}
+
+###
+
+### 8. Eliminar un alumno por ID
+DELETE http://localhost:3000/alumnos/3
